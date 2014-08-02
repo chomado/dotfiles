@@ -14,5 +14,5 @@ set smartcase
 set smartindent
 "行頭の余白内で Tab を打ち込むと、'shiftwidth' の数だけインデントする。
 set smarttab
-
-
+"検索結果をハイライト表示
+set hlsearch
