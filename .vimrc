@@ -28,16 +28,17 @@ if has('vim_starting')
 endif
 
 call neobundle#begin(expand('~/.vim/bundle/'))
-call neobundle#end()
+
 " Let NeoBundle manage NeoBundle
 NeoBundleFetch 'Shougo/neobundle.vim'
 
-NeoBundleCheck
-
-" install wandbox-vim
+" install 
 NeoBundle 'rhysd/wandbox-vim'
-
 NeoBundle 'Shougo/vimshell.vim'
+NeoBundle 'scrooloose/syntastic'
 
-" add plugins
+call neobundle#end()
 filetype plugin on
+
+" それ以前までの行に出てきたプラグインがインストールされてなければインストールするかどうかプロンプトを出してくれる機能
+NeoBundleCheck
